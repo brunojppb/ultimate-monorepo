@@ -10,11 +10,13 @@
   },
   "scripts": {
     "dev:app": "turbo run dev --filter='ultimate-web...'",
-    "dev:docs": "turbo run dev --filter='ultimate-docs'"
+    "dev:docs": "turbo run dev --filter='ultimate-docs'",
+    "build": "turbo run build --graph"
   },
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.22.0",
     "turbo": "^1.2.14"
   }
 }
