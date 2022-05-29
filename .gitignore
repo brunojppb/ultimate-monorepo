@@ -8,3 +8,7 @@ dist
 # debug
 npm-debug.log*
 .pnpm-debug.log*
+
+# Editors and IDEs
+.idea
+.vscode
