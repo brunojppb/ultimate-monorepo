@@ -1,7 +1,7 @@
 {
   "name": "ultimate-monorepo",
   "version": "1.0.0",
-  "private": "true",
+  "private": true,
   "description": "The ultimate monorepo setup for TypeScript, React, built-in versioning and deployments",
   "author": {
     "name": "Bruno Paulino",
@@ -9,8 +9,12 @@
     "url": "https://bpaulino.com"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:app": "turbo run dev --filter='ultimate-web...'",
+    "dev:docs": "turbo run dev --filter='ultimate-docs'"
   },
   "keywords": [],
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^1.2.14"
+  }
 }

@@ -6,7 +6,7 @@ type UltimateButtonProps = {
 
 export function UltimateBox({ children }: UltimateButtonProps) {
   return(
-    <div style={{ backgroundColor: 'moccasin' }}>
+    <div style={{ backgroundColor: 'olive' }}>
       {children}
     </div>
   )
