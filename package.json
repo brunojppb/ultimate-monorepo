@@ -1,0 +1,16 @@
+{
+  "name": "ultimate-monorepo",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "The ultimate monorepo setup for TypeScript, React, built-in versioning and deployments",
+  "author": {
+    "name": "Bruno Paulino",
+    "email": "dev@bpaulino.com",
+    "url": "https://bpaulino.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC"
+}

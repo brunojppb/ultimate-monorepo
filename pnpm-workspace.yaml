@@ -1,0 +1,5 @@
+packages:
+  # all directories within the 'packages' and 'apps' directories
+  # are considered monorepo packages.
+  - 'packages/**'
+  - 'apps/**'
