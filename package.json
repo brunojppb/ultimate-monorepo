@@ -1,5 +1,5 @@
 {
-  "name": "ultimate-monorepo",
+  "name": "@ultimate-monorepo",
   "version": "1.0.0",
   "private": true,
   "description": "The ultimate monorepo setup for TypeScript, React, built-in versioning and deployments",
@@ -9,8 +9,8 @@
     "url": "https://bpaulino.com"
   },
   "scripts": {
-    "dev:app": "turbo run dev --filter='ultimate-web...'",
-    "dev:docs": "turbo run dev --filter='ultimate-docs'",
+    "dev:app": "turbo run dev --filter='@ultimate-monorepo/web...'",
+    "dev:docs": "turbo run dev --filter='@ultimate-monorepo/docs'",
     "build": "turbo run build --graph"
   },
   "keywords": [],

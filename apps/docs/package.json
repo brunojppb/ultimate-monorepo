@@ -1,5 +1,5 @@
 {
-  "name": "ultimate-docs",
+  "name": "@ultimate-monorepo/docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {

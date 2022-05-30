@@ -1,5 +1,5 @@
 {
-  "name": "ultimate-components",
+  "name": "@ultimate-monorepo/core",
   "private": false,
   "version": "0.0.0",
   "main": "./dist/ultimate-components.umd.js",
