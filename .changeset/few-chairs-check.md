@@ -1,6 +1,6 @@
 ---
-"ultimate-web": patch
-"ultimate-components": patch
+"@ultimate-monorepo/web": patch
+"@ultimate-monorepo/core": patch
 ---
 
 ## Changesets Support
