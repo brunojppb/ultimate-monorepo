@@ -1,5 +1,5 @@
 {
-  "name": "ultimate-components",
+  "name": "@ultimate-monorepo/core",
   "private": false,
   "version": "0.0.0",
   "main": "./dist/ultimate-components.umd.js",
@@ -15,7 +15,8 @@
   "scripts": {
     "dev": "vite build --watch",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "echo releasing core"
   },
   "dependencies": {
     "react": "17.0.2",
