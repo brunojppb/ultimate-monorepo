@@ -12,6 +12,9 @@
     },
     "dev": {
       "cache": false
+    },
+    "release": {
+      "cache": false
     }
   }
 }
