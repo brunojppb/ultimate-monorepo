@@ -4,6 +4,8 @@ dist
 # misc
 .DS_Store
 *.pem
+.npmrc
+.pnpm-store
 
 # debug
 npm-debug.log*
