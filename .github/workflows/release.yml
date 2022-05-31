@@ -5,7 +5,6 @@ on:
       - main
 env:
   CI: true
-  PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
   version:
     timeout-minutes: 15
@@ -27,17 +26,16 @@ jobs:
         # Make sure to have added the NPM_TOKEN to the repo secrets
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
-      - name: setup pnpm config
-        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
-
       - name: install dependencies
         run: pnpm install
 
-      - name: Create Release PR and replease packages
+      - name: Create Release PR and release packages
         id: changesets
         uses: changesets/action@v1
         with:
           publish: pnpm release
+          commit: "chore: update package versions"
+          title: "chore: update package versions"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
