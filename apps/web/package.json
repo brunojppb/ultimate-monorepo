@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "release": "echo releasing web app"
+    "deploy": "echo deploying web app with Docker..."
   },
   "dependencies": {
     "next": "12.1.6",

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "release": "echo releasing docs"
+    "deploy": "echo deploying docs package..."
   },
   "dependencies": {
     "next": "12.1.6",
