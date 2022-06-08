@@ -22,21 +22,14 @@ jobs:
       - name: install pnpm
         run: npm i pnpm@7 -g
 
-      - name: Setup npmrc
-        # Make sure to have added the NPM_TOKEN to the repo secrets
-        # So we can publish to npm via Github Actions
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-
       - name: install dependencies
         run: pnpm install
 
-      - name: Create Release pull-request OR kick-off release
+      - name: Create Release PR
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm release
           commit: "chore: update package versions"
           title: "chore: update package versions"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
