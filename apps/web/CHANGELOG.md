@@ -1,5 +1,11 @@
 # @ultimate-monorepo/web
 
+## 0.1.2
+
+### Patch Changes
+
+- a689fd8: Update deploy scripts
+
 ## 0.1.1
 
 ### Patch Changes
