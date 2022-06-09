@@ -1,5 +1,11 @@
 # @ultimate-monorepo/web
 
+## 0.1.3
+
+### Patch Changes
+
+- ca846c0: Add Web release check pipeline
+
 ## 0.1.2
 
 ### Patch Changes
