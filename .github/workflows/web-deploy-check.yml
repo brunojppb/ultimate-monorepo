@@ -1,0 +1,42 @@
+name: Web Deploy Check
+on:
+  push:
+    branches:
+      - main
+env:
+  CI: true
+
+jobs:
+  deploy:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: install pnpm
+        run: npm i pnpm@7 -g
+
+      - name: install dependencies
+        run: pnpm install
+
+      - name: Check if version has been updated
+        id: check
+        uses: EndBug/version-check@v2
+        with:
+          file-name: ./apps/web/package.json
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Log when changed
+        if: steps.check.outputs.changed == 'true'
+        run: 'echo "Version change found in commit ${{ steps.check.outputs.commit }}! New version: ${{ steps.check.outputs.version }} (${{ steps.check.outputs.type }})"'
+      
+      - name: Log when unchanged
+        if: steps.check.outputs.changed == 'false'
+        run: 'echo "Web app did not change versions"'
