@@ -19,7 +19,7 @@
     "build": "tsc && vite build",
     "test": "jest",
     "preview": "vite preview",
-    "release": "pnpm publish --dry-run"
+    "release": "pnpm publish"
   },
   "dependencies": {
     "react": "18.1.0",
