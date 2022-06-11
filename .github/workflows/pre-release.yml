@@ -1,13 +1,12 @@
-name: Web Deploy Check
+name: Pre Release
 on:
   push:
     branches:
       - main
 env:
   CI: true
-
 jobs:
-  deploy-check:
+  version-check:
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
@@ -41,13 +40,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Check if version has been updated
-        id: check
-        uses: EndBug/version-check@v2
-        with:
-          file-name: ./apps/web/package.json
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: install dependencies
+        run: pnpm install
 
-      - name: Deploy Web App
-        if: steps.check.outputs.changed == 'true'
-        uses: ./.github/workflows/web-deploy
+      - name: Create Release PR
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          commit: "chore: bump package versions"
+          title: "chore: Release PR"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

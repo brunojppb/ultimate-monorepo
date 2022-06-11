@@ -1,14 +1,10 @@
-name: Web Deploy Check
+name: Web Deploy
+
 on:
-  push:
-    branches:
-      - main
-env:
-  CI: true
+  workflow_call:
 
 jobs:
-  deploy-check:
-    timeout-minutes: 15
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: git checkout
@@ -41,13 +37,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Check if version has been updated
-        id: check
-        uses: EndBug/version-check@v2
-        with:
-          file-name: ./apps/web/package.json
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: install dependencies
+        run: pnpm install
 
-      - name: Deploy Web App
-        if: steps.check.outputs.changed == 'true'
-        uses: ./.github/workflows/web-deploy
+      - name: Deploy Web app
+        run: pnpm --filter "@ultimate-monorepo/web" deploy
