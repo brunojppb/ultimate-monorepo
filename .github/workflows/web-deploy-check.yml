@@ -50,4 +50,4 @@ jobs:
 
       - name: Deploy Web App
         if: steps.check.outputs.changed == 'true'
-        uses: ./.github/workflows/web-deploy
+        uses: ./.github/workflows/web-deploy.yml
