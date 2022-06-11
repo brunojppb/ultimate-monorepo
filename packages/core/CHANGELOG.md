@@ -1,5 +1,11 @@
 # @ultimate-monorepo/core
 
+## 0.0.4
+
+### Patch Changes
+
+- 9ed8763: Use job instead of a step to trigger deploy
+
 ## 0.0.3
 
 ### Patch Changes
