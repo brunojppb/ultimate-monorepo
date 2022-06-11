@@ -1,5 +1,11 @@
 # @ultimate-monorepo/core
 
+## 0.0.5
+
+### Patch Changes
+
+- 57e420f: Remove steps
+
 ## 0.0.4
 
 ### Patch Changes
