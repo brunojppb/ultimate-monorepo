@@ -18,7 +18,7 @@
     "dev": "vite build --watch",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "release": "echo releasing core"
+    "release": "pnpm publish --dry-run"
   },
   "dependencies": {
     "react": "17.0.2",
