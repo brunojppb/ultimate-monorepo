@@ -1,5 +1,13 @@
 # @ultimate-monorepo/web
 
+## 0.1.7
+
+### Patch Changes
+
+- 57e420f: Remove steps
+- Updated dependencies [57e420f]
+  - @ultimate-monorepo/core@0.0.5
+
 ## 0.1.6
 
 ### Patch Changes
