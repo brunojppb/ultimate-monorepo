@@ -1,7 +1,15 @@
 {
   "name": "@ultimate-monorepo/core",
+  "description": "The ultimate monorepo component library",
+  "homepage": "https://github.com/brunojppb/ultimate-monorepo",
   "private": false,
   "version": "0.1.0",
+  "author": {
+    "name": "Bruno Paulino",
+    "email": "hey@bpaulino.com",
+    "url": "https://bpaulino.com"
+  },
+  
   "main": "./dist/ultimate-components.umd.js",
   "module": "./dist/ultimate-components.es.js",
   "types": "./dist/index.d.ts",
