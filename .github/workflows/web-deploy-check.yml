@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      
+
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         id: pnpm-install
@@ -50,12 +50,8 @@ jobs:
         with:
           file-name: ./apps/web/package.json
           token: ${{ secrets.GITHUB_TOKEN }}
-  
-  trigger-deploy:
-    runs-on: ubuntu-latest
-    needs: [deploy-check]
 
-    steps:
-      - name: Deploy Web App
-        if: needs.deploy-check.outputs.changed == 'true'
-        uses: ./.github/workflows/web-deploy.yml
+  trigger-deploy:
+    needs: deploy-check
+    if: needs.deploy-check.outputs.changed == 'true'
+    uses: ./.github/workflows/web-deploy.yml
