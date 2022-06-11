@@ -1,5 +1,13 @@
 # @ultimate-monorepo/web
 
+## 0.1.4
+
+### Patch Changes
+
+- f94233a: Create dependent release workflow for Web app
+- Updated dependencies [f94233a]
+  - @ultimate-monorepo/core@0.0.2
+
 ## 0.1.3
 
 ### Patch Changes
