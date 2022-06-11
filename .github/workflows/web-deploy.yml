@@ -2,6 +2,8 @@ name: Web Deploy
 
 on:
   workflow_call:
+  # Allow deploys to be triggered manually from the Github UI
+  workflow_dispatch:
 
 jobs:
   deploy:
