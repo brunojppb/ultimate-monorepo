@@ -1,5 +1,16 @@
 # @ultimate-monorepo/web
 
+## 0.2.0
+
+### Minor Changes
+
+- 906a6ef: Using the newly created Grid component
+
+### Patch Changes
+
+- Updated dependencies [906a6ef]
+  - @ultimate-monorepo/core@0.1.0
+
 ## 0.1.7
 
 ### Patch Changes
