@@ -1,10 +1,10 @@
 import React from 'react'
 
-type UltimateButtonProps = {
+type UltimateBoxProps = {
   children: React.ReactNode
 }
 
-export function UltimateBox({ children }: UltimateButtonProps) {
+export function UltimateBox({ children }: UltimateBoxProps) {
   return(
     <div style={{ backgroundColor: 'olive' }}>
       {children}
