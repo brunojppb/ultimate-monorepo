@@ -1,5 +1,13 @@
 # @ultimate-monorepo/web
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated dependencies [de21eb0]
+- Updated dependencies [3187df5]
+  - @ultimate-monorepo/core@1.0.0
+
 ## 0.2.0
 
 ### Minor Changes

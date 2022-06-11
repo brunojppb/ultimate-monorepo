@@ -1,5 +1,15 @@
 # @ultimate-monorepo/core
 
+## 1.0.0
+
+### Major Changes
+
+- de21eb0: Core package metadata
+
+### Minor Changes
+
+- 3187df5: Release to npm
+
 ## 0.1.0
 
 ### Minor Changes
