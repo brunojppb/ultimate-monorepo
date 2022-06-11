@@ -1,5 +1,13 @@
 # @ultimate-monorepo/web
 
+## 0.1.6
+
+### Patch Changes
+
+- 9ed8763: Use job instead of a step to trigger deploy
+- Updated dependencies [9ed8763]
+  - @ultimate-monorepo/core@0.0.4
+
 ## 0.1.5
 
 ### Patch Changes
