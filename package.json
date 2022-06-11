@@ -12,8 +12,11 @@
     "dev:app": "turbo run dev --filter='@ultimate-monorepo/web...'",
     "dev:docs": "turbo run dev --filter='@ultimate-monorepo/docs'",
     "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
     "build:graph": "turbo run build --graph",
-    "release": "turbo run release"
+    "release": "turbo run release",
+    "ci:test": "turbo run build lint test"
   },
   "keywords": [],
   "license": "ISC",
