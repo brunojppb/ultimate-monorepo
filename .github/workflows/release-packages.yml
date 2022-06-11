@@ -42,5 +42,8 @@ jobs:
       - name: install dependencies
         run: pnpm install
 
+      - name: npm token
+        run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc
+
       - name: Release packages
         run: pnpm release
