@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { UltimateBox, UltimateButton } from '@ultimate-monorepo/core'
+import { UltimateBox, UltimateButton, UltimateGrid } from '@ultimate-monorepo/core'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -26,6 +26,9 @@ const Home: NextPage = () => {
           <UltimateButton onClick={() => console.log('Ultimate button clicked!')}>
             Here is a button
           </UltimateButton>
+          <UltimateGrid>
+            This is a Grid item
+          </UltimateGrid>
         </UltimateBox>
 
         <div className={styles.grid}>
