@@ -1,5 +1,11 @@
 # @ultimate-monorepo/core
 
+## 0.0.3
+
+### Patch Changes
+
+- f14098b: chore: Fix dependent workflow
+
 ## 0.0.2
 
 ### Patch Changes
