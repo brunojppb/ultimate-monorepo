@@ -25,6 +25,7 @@
     "dev": "vite build --watch",
     "build": "tsc && vite build",
     "test": "jest",
+    "clean": "rm -rf dist",
     "preview": "vite preview",
     "release": "pnpm publish --access public"
   },

@@ -1,3 +1,5 @@
-export { UltimateBox } from './UltimateBox'
-export { UltimateButton } from './UltimateButton'
-export { UltimateGrid } from './UltimateGrid'
+export { Box } from './Box'
+export { Button } from './Button'
+export { Grid, GridItem } from './Grid'
+export { Title } from './Title'
+export { Card } from './Card'

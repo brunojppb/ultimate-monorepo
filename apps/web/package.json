@@ -12,6 +12,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "clean": "rm -rf .next",
     "deploy": "echo deploying web app with Docker..."
   },
   "dependencies": {

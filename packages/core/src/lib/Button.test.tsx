@@ -3,7 +3,7 @@
  */
 
 import { render, screen, waitFor } from '@testing-library/react'
-import { UltimateButton } from './UltimateButton'
+import { UltimateButton } from './Button'
 
 describe("UltimateButton", () => {
   it("should render some text", async () => {

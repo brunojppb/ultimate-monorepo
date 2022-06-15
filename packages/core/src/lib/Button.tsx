@@ -8,10 +8,10 @@ type UltimateButtonProps = {
 const style = { 
   border: '1px solid black',
   borderRadius: '3px', 
-  padding: '4px' 
+  padding: '4px',
 }
 
-export function UltimateButton({ children, onClick }: UltimateButtonProps) {
+export function Button({ children, onClick }: UltimateButtonProps) {
   return(
     <button onClick={onClick} style={style}>
       {children}
