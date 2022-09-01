@@ -43,4 +43,4 @@ jobs:
         run: pnpm install
 
       - name: Deploy Web app
-        run: pnpm --filter "@ultimate-monorepo/web" deploy
+        run: pnpm --filter "@ultimate-monorepo/web" docker:deploy

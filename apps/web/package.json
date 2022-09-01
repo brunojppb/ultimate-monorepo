@@ -13,7 +13,7 @@
     "start": "next start",
     "lint": "next lint",
     "clean": "rm -rf .next",
-    "deploy": "echo deploying web app with Docker..."
+    "docker:deploy": "echo deploying web app with Docker..."
   },
   "dependencies": {
     "next": "12.1.6",
