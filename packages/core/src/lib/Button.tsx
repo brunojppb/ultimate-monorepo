@@ -8,7 +8,7 @@ type UltimateButtonProps = {
 const style = {
   border: "1px solid black",
   borderRadius: "3px",
-  padding: "16px",
+  padding: "14px",
   fontWeight: "bold",
   fontSize: "20px",
 };
