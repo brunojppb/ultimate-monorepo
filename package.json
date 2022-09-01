@@ -24,6 +24,9 @@
   "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.22.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "8.16.0",
     "turbo": "1.4.3"
   },
   "volta": {
