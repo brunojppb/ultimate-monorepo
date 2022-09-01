@@ -1,20 +1,22 @@
-import React from 'react';
+import React from "react";
 
 type UltimateButtonProps = {
-  children: string
-  onClick?: React.MouseEventHandler<HTMLButtonElement>
-}
+  children: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+};
 
-const style = { 
-  border: '1px solid black',
-  borderRadius: '3px', 
-  padding: '4px',
-}
+const style = {
+  border: "1px solid black",
+  borderRadius: "3px",
+  padding: "16px",
+  fontWeight: "bold",
+  fontSize: "20px",
+};
 
 export function Button({ children, onClick }: UltimateButtonProps) {
-  return(
+  return (
     <button onClick={onClick} style={style}>
       {children}
     </button>
-  )
+  );
 }
