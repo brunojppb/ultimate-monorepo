@@ -10,7 +10,7 @@
   },
   "packageManager": "pnpm@7.2.1",
   "scripts": {
-    "dev:app": "turbo run dev --filter='@ultimate-monorepo/web...'",
+    "dev:app": "turbo run dev --filter='@ultimate-monorepo/web...' --parallel",
     "dev:docs": "turbo run dev --filter='@ultimate-monorepo/docs'",
     "build": "turbo run build",
     "test": "turbo run test",
@@ -24,6 +24,6 @@
   "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.22.0",
-    "turbo": "^1.2.14"
+    "turbo": "1.4.3"
   }
 }
