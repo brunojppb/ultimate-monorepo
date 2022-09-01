@@ -1,5 +1,11 @@
 # @ultimate-monorepo/core
 
+## 2.0.0
+
+### Major Changes
+
+- 2792723: Export styled Button component
+
 ## 1.0.0
 
 ### Major Changes
