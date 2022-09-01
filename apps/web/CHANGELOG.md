@@ -1,5 +1,13 @@
 # @ultimate-monorepo/web
 
+## 0.2.2
+
+### Patch Changes
+
+- 037a1ea: Render Button component from @ultimate-monorepo/core
+- Updated dependencies [2792723]
+  - @ultimate-monorepo/core@2.0.0
+
 ## 0.2.1
 
 ### Patch Changes
