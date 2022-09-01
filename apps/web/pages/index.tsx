@@ -1,7 +1,6 @@
 import { Box, Button, Grid, GridItem, Title, Card } from '@ultimate-monorepo/core'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -50,7 +49,11 @@ const Home: NextPage = () => {
             </Card>
           </GridItem>
         </Grid>
-
+        <div style={{marginTop: '8px'}}>
+          <Button onClick={() => alert('Hi there!')}>
+            Say hi!
+          </Button>
+        </div>
       </main>
     </Box>
   )
