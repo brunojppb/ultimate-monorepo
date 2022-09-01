@@ -1,5 +1,11 @@
 # @ultimate-monorepo/core
 
+## 2.0.1
+
+### Patch Changes
+
+- [#29](https://github.com/brunojppb/ultimate-monorepo/pull/29) [`b44607a`](https://github.com/brunojppb/ultimate-monorepo/commit/b44607a87c3cc105a1eb9a654c7d5f7985293a6a) Thanks [@brunojppb](https://github.com/brunojppb)! - Reduce `Button` component padding
+
 ## 2.0.0
 
 ### Major Changes
