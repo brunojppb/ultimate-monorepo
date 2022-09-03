@@ -1,0 +1,62 @@
+name: Web Deploy
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_DOCS_PROJECT_ID }}
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Pull Vercel Environment
+        working-directory: ./apps/docs
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build Project
+        working-directory: ./apps/docs
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel
+        working-directory: ./apps/docs
+        run: vercel deploy --prod --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
