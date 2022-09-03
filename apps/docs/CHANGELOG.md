@@ -1,5 +1,15 @@
 # @ultimate-monorepo/docs
 
+## 1.0.0
+
+### Major Changes
+
+- [#33](https://github.com/brunojppb/ultimate-monorepo/pull/33) [`149a6d2`](https://github.com/brunojppb/ultimate-monorepo/commit/149a6d27f6d734860e9be799fef3f58d0219b691) Thanks [@brunojppb](https://github.com/brunojppb)! - Use Nextra 2 Beta for a better offline search experience
+
+### Patch Changes
+
+- [#35](https://github.com/brunojppb/ultimate-monorepo/pull/35) [`7f2deea`](https://github.com/brunojppb/ultimate-monorepo/commit/7f2deea8708fbc808f7d2cf4ba5c1f7cf904e6f3) Thanks [@brunojppb](https://github.com/brunojppb)! - Correct Github link on Docs header
+
 ## 0.1.5
 
 ### Patch Changes
