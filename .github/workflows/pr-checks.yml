@@ -25,7 +25,7 @@ jobs:
         id: pnpm-cache
         run: |
           echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
-      
+
       - uses: actions/cache@v3
         name: pnpm cache
         with:
@@ -33,9 +33,9 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('./frontend/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-      
+
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Checks
         run: pnpm ci:test

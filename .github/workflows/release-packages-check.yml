@@ -1,14 +1,18 @@
-name: Pre Release
+name: Web Deploy Check
 on:
   push:
     branches:
       - main
 env:
   CI: true
+
 jobs:
-  version-check:
+  release-check:
     timeout-minutes: 15
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.check.outputs.changed }}
+
     steps:
       - name: git checkout
         uses: actions/checkout@v3
@@ -40,14 +44,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Create Release PR
-        id: changesets
-        uses: changesets/action@v1
+      - name: Check if version has been updated
+        id: check
+        uses: EndBug/version-check@v2
         with:
-          commit: "chore: bump package versions"
-          title: "chore: Release PR"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          file-name: ./packages/core/package.json
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  trigger-release:
+    needs: deploy-check
+    if: needs.deploy-check.outputs.changed == 'true'
+    uses: ./.github/workflows/web-deploy.yml

@@ -87,7 +87,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: npm token
         run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc

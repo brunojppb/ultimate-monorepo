@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
