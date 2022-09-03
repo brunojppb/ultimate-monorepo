@@ -1,5 +1,11 @@
 # @ultimate-monorepo/core
 
+## 2.0.2
+
+### Patch Changes
+
+- [#31](https://github.com/brunojppb/ultimate-monorepo/pull/31) [`6186f35`](https://github.com/brunojppb/ultimate-monorepo/commit/6186f358cda4af15c58223a9e74290e5129baf9f) Thanks [@brunojppb](https://github.com/brunojppb)! - Composable tsconfig across packages
+
 ## 2.0.1
 
 ### Patch Changes
