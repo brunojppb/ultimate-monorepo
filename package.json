@@ -19,7 +19,8 @@
     "clean": "turbo run clean",
     "build:graph": "turbo run build --graph",
     "release": "turbo run release",
-    "ci:test": "turbo run build lint test"
+    "ci:test": "turbo run build lint test",
+    "prepare": "turbo run build --filter='@ultimate-monorepo/core'"
   },
   "keywords": [],
   "license": "ISC",

@@ -26,7 +26,6 @@
     "build": "tsc --noEmit && vite build",
     "test": "jest",
     "clean": "rm -rf dist",
-    "prepare": "pnpm build",
     "preview": "vite preview",
     "release": "pnpm publish --access public"
   },
