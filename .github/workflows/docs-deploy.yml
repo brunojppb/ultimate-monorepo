@@ -53,10 +53,10 @@ jobs:
         working-directory: ./apps/docs
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Build Project
+      - name: Build Docs
         working-directory: ./apps/docs
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Deploy to Vercel
+      - name: Deploy Docs to Vercel
         working-directory: ./apps/docs
         run: vercel deploy --prod --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
