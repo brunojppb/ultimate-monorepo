@@ -6,10 +6,8 @@ export default {
     nextLinks: true,
     prevLinks: true,
   },
-  docsRepositoryBase: 'https://github.com/brunojppb/ultimate-monorepo/blob/main/apps/docs/pages',
+  docsRepositoryBase: 'https://github.com/brunojppb/ultimate-monorepo/blob/main/apps/docs',
   titleSuffix: '',
-  
-  search: true,
   unstable_flexsearch: true,
   toc: {
     float: true,
