@@ -13,6 +13,7 @@
     "dev:app": "turbo run dev --filter='@ultimate-monorepo/web...' --parallel",
     "dev:docs": "turbo run dev --filter='@ultimate-monorepo/docs'",
     "build": "turbo run build",
+    "build:app": "turbo run build --filter='@ultimate-monorepo/web...'",
     "test": "turbo run test",
     "lint": "turbo run lint",
     "clean": "turbo run clean",

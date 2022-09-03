@@ -45,10 +45,13 @@ jobs:
       - name: install dependencies
         run: pnpm install
 
+      - name: Build Web app
+        run: pnpm build:app
+
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
 
-      - name: Pull Vercel Environment Information
+      - name: Pull Vercel Environment
         working-directory: ./apps/web
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
@@ -58,4 +61,4 @@ jobs:
 
       - name: Deploy to Vercel
         working-directory: ./apps/web
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --prod --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
