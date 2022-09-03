@@ -1,20 +1,26 @@
 export default {
-  projectLink: 'https://github.com/brunojppb/ultimate-monorepo',
-  docsRepositoryBase: 'https://github.com/brunojppb/ultimate-monorepo/blob/main',
+  project: { 
+    link: 'https://github.com/brunojppb/ultimate-monorepo',
+  },
+  navigation: {
+    nextLinks: true,
+    prevLinks: true,
+  },
+  docsRepositoryBase: 'https://github.com/brunojppb/ultimate-monorepo/blob/main/apps/docs/pages',
   titleSuffix: '',
-  nextLinks: true,
-  prevLinks: true,
+  
   search: true,
-  customSearch: null, // customizable, you can use algolia for example
+  unstable_flexsearch: true,
+  toc: {
+    float: true,
+  },
   darkMode: true,
-  footer: true,
-  footerText: `ISC ${new Date().getFullYear()} © Bruno Paulino.`,
-  footerEditLink: `Edit this page on GitHub`,
+  footer: {
+    text: `ISC ${new Date().getFullYear()} © Bruno Paulino.`,
+    EditLink: `Edit this page on GitHub`,
+  },
   logo: (
-    <>
-      <svg>...</svg>
-      <span>Ultimate Monorepo docs</span>
-    </>
+    <span>Ultimate Monorepo docs</span>
   ),
   head: (
     <>

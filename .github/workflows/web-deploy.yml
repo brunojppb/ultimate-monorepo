@@ -52,10 +52,10 @@ jobs:
         working-directory: ./apps/web
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Build Project
+      - name: Build Web App
         working-directory: ./apps/web
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Deploy to Vercel
+      - name: Deploy Web app to Vercel
         working-directory: ./apps/web
         run: vercel deploy --prod --prebuilt --token=${{ secrets.VERCEL_TOKEN }}

@@ -7,13 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rm -rf .next",
-    "deploy": "echo deploying docs package..."
+    "clean": "rm -rf .next"
   },
   "dependencies": {
-    "next": "12.1.6",
-    "nextra": "^1.1.0",
-    "nextra-theme-docs": "^1.2.6",
+    "next": "^12.2.0",
+    "nextra": "^2.0.0-beta.6",
+    "nextra-theme-docs": "^2.0.0-beta.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
