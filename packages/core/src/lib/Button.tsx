@@ -10,7 +10,7 @@ const style = {
   borderRadius: "3px",
   padding: "14px",
   fontWeight: "bold",
-  fontSize: "20px",
+  fontSize: "25px",
 };
 
 export function Button({ children, onClick }: UltimateButtonProps) {
