@@ -1,5 +1,12 @@
 # @ultimate-monorepo/web
 
+## 0.2.5
+
+### Patch Changes
+
+- Updated dependencies [[`6ce9f95`](https://github.com/brunojppb/ultimate-monorepo/commit/6ce9f9505a15c0ce58ecbe6e384129ba88034f76)]:
+  - @ultimate-monorepo/core@2.0.3
+
 ## 0.2.4
 
 ### Patch Changes

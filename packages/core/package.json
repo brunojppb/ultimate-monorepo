@@ -3,7 +3,7 @@
   "description": "The ultimate monorepo component library",
   "homepage": "https://github.com/brunojppb/ultimate-monorepo",
   "private": false,
-  "version": "2.0.2",
+  "version": "2.0.3",
   "author": {
     "name": "Bruno Paulino",
     "email": "hey@bpaulino.com",
