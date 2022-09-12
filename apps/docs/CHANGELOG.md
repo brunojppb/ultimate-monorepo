@@ -1,5 +1,11 @@
 # @ultimate-monorepo/docs
 
+## 1.0.1
+
+### Patch Changes
+
+- [#37](https://github.com/brunojppb/ultimate-monorepo/pull/37) [`b7d920b`](https://github.com/brunojppb/ultimate-monorepo/commit/b7d920ba3be88d2ceb3ab0b2d1e6a6e582bd9e70) Thanks [@brunojppb](https://github.com/brunojppb)! - Update How-to page
+
 ## 1.0.0
 
 ### Major Changes
